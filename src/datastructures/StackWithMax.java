@@ -12,7 +12,7 @@ Analysis:
 - Stack Array is fixed and cannot be increased during run time.
 */
 
-package challenges;
+package datastructures;
 
 public class StackWithMax {
     private int index = 0;

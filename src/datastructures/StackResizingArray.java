@@ -52,12 +52,12 @@ public class StackResizingArray {
     public void push(String s){
         if(isFull()) {
             // If full then increase the stack array by twice the current size
-            System.out.println("\n\tIncreasing stack array size.");
+            //System.out.println("\n\tIncreasing stack array size.");
             resize(items.length * 2);
         }
         items[index++] = s;
     }
-
+    
     public String pop() {
         if(isEmpty()) {
             throw new RuntimeException("Stack is Empty!");
@@ -68,7 +68,7 @@ public class StackResizingArray {
         
         if(index>0 && index == items.length/4) {
             // If only 25% is being used then shrink the array by half.
-            System.out.println("\n\tShrinking stack array size.");
+            //System.out.println("\n\tShrinking stack array size.");
             resize(items.length/2);
         }
         return s;

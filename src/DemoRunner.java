@@ -1,23 +1,21 @@
-import challenges.StackWithMax;
+import datastructures.QueuesWithTwoStacks;
 
 public class DemoRunner {
     public static void main(String []args) {
-        StackWithMax stack = new StackWithMax(10);
+        QueuesWithTwoStacks queue = new QueuesWithTwoStacks();
         
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
-        stack.push(5);
+        queue.enqueue("Be");
+        queue.enqueue("or");
+        queue.enqueue("not");
+        queue.enqueue("to");
+        queue.enqueue("be");
 
-       /* System.out.print(stack.pop() + " ");
-        System.out.print(stack.pop() + " ");
-        System.out.print(stack.pop() + " ");
-        System.out.print(stack.pop() + " ");
-        System.out.print(stack.pop() + " ");
-        */
-
-        System.out.println("\nMaximum item: " + stack.returnTheMaximum());
+        System.out.print(queue.dequeue() + " ");
+        System.out.print(queue.dequeue() + " ");
+        System.out.print(queue.dequeue() + " ");
+        System.out.print(queue.dequeue() + " ");
+        System.out.print(queue.dequeue() + " ");
+        
         System.out.println("\nEnd of the program.");
     }
 }
