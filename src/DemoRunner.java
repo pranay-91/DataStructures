@@ -1,9 +1,8 @@
-import datastructures.GenericStackLinkedList;
+import datastructures.GenericStackArray;
 
 public class DemoRunner {
     public static void main(String []args) {
-
-        GenericStackLinkedList<Integer> stack = new GenericStackLinkedList<Integer>();
+        GenericStackArray<Integer> stack = new GenericStackArray<Integer>(10);
         
         stack.push(1);
         stack.push(2);
