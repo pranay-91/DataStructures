@@ -1,8 +1,8 @@
-import datastructures.GenericStackArray;
+import challenges.StackWithMax;
 
 public class DemoRunner {
     public static void main(String []args) {
-        GenericStackArray<Integer> stack = new GenericStackArray<Integer>(10);
+        StackWithMax<Integer> stack = new StackWithMax<Integer>();
         
         stack.push(1);
         stack.push(2);

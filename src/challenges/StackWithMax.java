@@ -30,7 +30,7 @@ package challenges;
 public class StackWithMax<Item> {
     private int index = 0;
     private static int DEFAULT_SIZE = 10;
-    private Item[] items = new String[DEFAULT_SIZE];
+    private Item[] items = (Item[])new Object[DEFAULT_SIZE]; // Typecasting. Item extends Object Class.
 
     public boolean isEmpty() {
         return index == 0;
@@ -42,7 +42,9 @@ public class StackWithMax<Item> {
 
     // Helper function to resize an array
     private void resize(int size) {
-        String[] copy = new Item[size];
+        // Typecasting. Item extends Object Class. 
+        // Need to investigate what are the possible drawbacks for typecasting during runtime.
+        Item[] copy = (Item[])new Object[size]; 
         for(int i=0; i<index; ++i) {
             copy[i] = items[i];
         }
@@ -52,7 +54,7 @@ public class StackWithMax<Item> {
     public void push(Item s){
         if(isFull()) {
             // If full then increase the stack array by twice the current size
-            System.out.println("\n\tIncreasing stack array size.");
+            // System.out.println("\n\tIncreasing stack array size.");
             resize(items.length * 2);
         }
         items[index++] = s;
@@ -68,7 +70,7 @@ public class StackWithMax<Item> {
         
         if(index>0 && index == items.length/4) {
             // If only 25% is being used then shrink the array by half.
-            System.out.println("\n\tShrinking stack array size.");
+            // System.out.println("\n\tShrinking stack array size.");
             resize(items.length/2);
         }
         return s;
