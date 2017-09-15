@@ -4,6 +4,9 @@ Stack implementation in Java using Linked List
     ^
 push/pop
 
+Analysis:
+- Every operation takes constant time in the worst case scenario.
+- Uses extra time and space to deal with the links.
  */
 
 package datastructures;
