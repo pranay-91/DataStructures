@@ -25,7 +25,7 @@ Amortorized Analysis:
 - Less wasted space.
 */
 
-package datastructures;
+package challenges;
 
 public class StackResizingArray<Item> {
     private int index = 0;
