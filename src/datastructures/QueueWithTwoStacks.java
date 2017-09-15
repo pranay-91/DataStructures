@@ -2,7 +2,7 @@ package datastructures;
 
 import datastructures.StackResizingArray;
 
-public class QueuesWithTwoStacks {
+public class QueueWithTwoStacks {
     private StackResizingArray enqueueStack =  new StackResizingArray();
     private StackResizingArray dequeStack = new StackResizingArray();
 

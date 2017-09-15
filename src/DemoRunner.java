@@ -1,8 +1,8 @@
-import datastructures.QueuesWithTwoStacks;
+import datastructures.QueueWithTwoStacks;
 
 public class DemoRunner {
     public static void main(String []args) {
-        QueuesWithTwoStacks queue = new QueuesWithTwoStacks();
+        QueueWithTwoStacks queue = new QueueWithTwoStacks();
         
         queue.enqueue("Be");
         queue.enqueue("or");
