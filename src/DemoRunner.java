@@ -1,20 +1,15 @@
-
-//import datastructures.StackLinkedList;
-//import datastructures.StackArray;
-import datastructures.StackResizingArray;
-
+import datastructures.GenericStackLinkedList;
 
 public class DemoRunner {
     public static void main(String []args) {
-        //StackLinkedList stack = new StackLinkedList();
-        //StackArray stack = new StackArray(10);
-        StackResizingArray stack = new StackResizingArray();
+
+        GenericStackLinkedList<Integer> stack = new GenericStackLinkedList<Integer>();
         
-        stack.push("Be");
-        stack.push("or");
-        stack.push("not");
-        stack.push("to");
-        stack.push("be.");
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
 
         System.out.print(stack.pop() + " ");
         System.out.print(stack.pop() + " ");
