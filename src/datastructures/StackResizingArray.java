@@ -18,6 +18,11 @@ Condition:
         decrease the array size by 2
 
 Invariant: Array is between 25% and 100% full.
+
+Amortorized Analysis:
+- Average running time per operation over a worst-case sequence of operations.
+- Every operation takes constant amortized time.
+- Less wasted space.
 */
 
 package datastructures;

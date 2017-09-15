@@ -6,6 +6,10 @@ Stack implementation in Java using Array Data Structure
                       ^              ^
                     index           size
                    push/pop
+
+Analysis:
+- Every operation takes constant time.
+- Stack Array is fixed and cannot be increased during run time.
 */
 
 package datastructures;
