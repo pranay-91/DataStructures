@@ -27,7 +27,7 @@ Amortorized Analysis:
 
 package challenges;
 
-public class StackResizingArray<Item> {
+public class StackWithMax<Item> {
     private int index = 0;
     private static int DEFAULT_SIZE = 10;
     private Item[] items = new String[DEFAULT_SIZE];
