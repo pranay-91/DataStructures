@@ -30,13 +30,15 @@ public class StackArray {
         if(isFull()) {
             throw new RuntimeException("Stack is Full!");
         }
-        items[++index] = s;
+        //use to index the array and then increase the index
+        items[index++] = s;
     }
 
     public String pop() {
         if(isEmpty()) {
             throw new RuntimeException("Stack is Empty!");
         }
-        return items[index--];
+        // reduce index and then access the array
+        return items[--index];
     }
 }
