@@ -4,10 +4,10 @@
 # Add this file to your home directory then include it in ~/.profile using `. ~/.profile-emoji-me.sh`
 
 # These will show up in an emoji compatible terminal
-ME_EMOJI=(🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼 🐨 🐯 🦁 🐮 🐷 🐸 🐵 🐙);
-RANDOM_ME_EMOJI=${ME_EMOJI[$((RANDOM%14))]};
-export PS1="\h:\W \u $RANDOM_ME_EMOJI  ";
-export PROMPT_COMMAND='update_terminal_cwd; echo -ne "\033]0;${RANDOM_ME_EMOJI##*/}\007"';
+#ME_EMOJI=(🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼 🐨 🐯 🦁 🐮 🐷 🐸 🐵 🐙);
+#RANDOM_ME_EMOJI=${ME_EMOJI[$((RANDOM%14))]};
+#export PS1="\h:\W \u $RANDOM_ME_EMOJI  ";
+#export PROMPT_COMMAND='update_terminal_cwd; echo -ne "\033]0;${RANDOM_ME_EMOJI##*/}\007"';
 
 # Default file is src/DemoRunner.java
 if [ $# -ge 1 ]  
