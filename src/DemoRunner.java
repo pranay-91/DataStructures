@@ -1,20 +1,20 @@
-import datastructures.QueueWithTwoStacks;
+import datastructures.MaxPQ;
 
 public class DemoRunner {
     public static void main(String []args) {
-        QueueWithTwoStacks queue = new QueueWithTwoStacks();
-        
-        queue.enqueue("Be");
-        queue.enqueue("or");
-        queue.enqueue("not");
-        queue.enqueue("to");
-        queue.enqueue("be");
+        MaxPQ<Integer> mpq = new MaxPQ(10);
+        mpq.insert(1);
+        mpq.insert(4);
+        mpq.insert(5);
+        mpq.insert(3);
+        mpq.insert(2);
+        mpq.insert(8);
+        mpq.insert(9);
+        mpq.insert(6);
 
-        System.out.print(queue.dequeue() + " ");
-        System.out.print(queue.dequeue() + " ");
-        System.out.print(queue.dequeue() + " ");
-        System.out.print(queue.dequeue() + " ");
-        System.out.print(queue.dequeue() + " ");
+        for(int i=0;i<7; ++i) {
+            System.out.println("Max: " + mpq.delMax());
+        }
         
         System.out.println("\nEnd of the program.");
     }
